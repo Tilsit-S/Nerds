@@ -1,23 +1,26 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
   </head>
   <body>
     <header>
-      <h1>Магазин готовых шаблонов</h1>
-      <nav>
-        <ul class="info">
-          <li><a href="#studio">СТУДИЯ</a></li>
-          <li><a href="#customers">КЛИЕНТЫ</a></li>
-          <li><a href="catalog.html">МАГАЗИН</a></li>
-          <li><a href="#me">КОНТАКТЫ</a></li>
-        </ul>
-        <ul>
-          <li><a href="#">КОРЗИНА:</a></li>
-        </ul>
-      </nav>
+      <div class="header-container">
+        <a class="header-nerds-logo" href="index.html">Nerds</a>
+        <h1>Магазин готовых шаблонов</h1>
+          <nav>
+            <ul class="info">
+              <li><a href="#studio">СТУДИЯ</a></li>
+              <li><a href="#customers">КЛИЕНТЫ</a></li>
+              <li><a href="catalog.html">МАГАЗИН</a></li>
+              <li><a href="#me">КОНТАКТЫ</a></li>
+            </ul>
+            <div class="basket">
+              <a href="#">КОРЗИНА:</a>
+            </div>
+          </nav>
+      </div>
     </header>
     <main>
         <div class="filter">
@@ -52,14 +55,22 @@
                 <li><button>ПО ТИПУ</button></li>
                 <li><button>ПО НАЗВАНИЮ</button></li>
             </ul>
-            <div class="buttons-up-down">
-              <button class="down">down</button>
-              <button class="up">up</button>
+            <div class="path-buttons-up-down">
+              <div class="buttons-up-down">
+                <a>
+                  <button class="down">down</button>
+                </a>
+                <a>
+                  <button class="up">up</button>
+                </a>
+              </div>
             </div>
         </div>
         <section class="sites">
             <ul class="sites-list">
-                <li><a href="#">sedona</a></li>
+                <li>
+                  <a href="#">sedona</a>
+                </li>
                 <li><a href="#">pink-app</a></li>
                 <li><a href="#">barbershop</a></li>
                 <li><a href="#">mishka</a></li>
@@ -72,11 +83,11 @@
                 <li><button>1</button></li>
                 <li><button>2</button></li>
                 <li><button>3</button></li>
-                <li><button>СЛЕДУЮЩАЯ</button></li>
+                <li><button type="button-next">СЛЕДУЮЩАЯ</button></li>
             </ul>
         </section>
     </main>
-    <footer>
+    <footer class="main-footer-catalog">
       <section class="Ссылки">
         <ul>
           <li><a href="VK.com">VK</a></li>

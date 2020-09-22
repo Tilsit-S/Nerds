@@ -1,0 +1,175 @@
+root {
+  /* index-header*/
+  --light-gray: rgba(238,238,238,1);
+
+}
+
+header {
+  background-color: #EEEEEE;
+}
+
+.page {
+  height: 100%;
+}
+
+.page-body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+  outline: 5px solid rgba(255, 0, 0, 0.3);
+}
+
+.main-navigation-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: auto;
+  height 115px;
+  font-size: 16 px;
+  line-height: 20px;
+  outline: 5px solid rgba(0,255,0, 0.3);
+}
+
+.site-navigation {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.main-header-logo {
+  outline: 5px solid rgba(0,255,0, 0.3);
+}
+
+.main-navigation-wrapper {
+  outline: 5px solid rgba(0,255,0, 0.3);
+}
+
+.user-basket {
+  outline: 5px solid rgba(0,255,0, 0.3);
+}
+
+.main-header-description {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  outline: 5px solid rgba(12, 20, 240, 0.3);
+}
+
+.left-side-description {
+  outline: 5px solid rgba(12, 20, 240, 0.3);
+}
+
+.sliders {
+  outline: 5px solid rgba(12, 20, 240, 0.3);
+}
+
+.main-container {
+  display: grid;
+  outline: 5px solid rgba(245, 10, 237, 0.3);
+}
+
+.main-sections {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  outline: 5px solid rgba(245, 10, 237, 0.3);
+}
+
+.main-specification {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  outline: 5px solid rgba(245, 10, 237, 0.3);
+}
+
+.statistics {
+  outline: 5px solid rgba(245, 10, 237, 0.3);
+}
+
+.header-title {        /*Долго, дорого, скурпулёзно*/
+  font-size: 55px;
+  line-height: 55px;
+}
+
+.site-description {   /*Математически выверенный дизайн для вашего сайта...*/
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.learn-more {         /*кнопка УЗНАТЬ БОЛЬШЕ*/
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.list-title {         /*С 2004 года любим точность во всём*/
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.friendsship-title {  /*Давайте дружить, это выгодно*/
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.friendsship-text {
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.studio,
+.customers,
+.magazine,
+.contacts,
+.basket {
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.web-sites-title,
+.app-title,
+.presentations-title {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.web-sites-description,
+.app-description,
+.presentations-description {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.button {
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.main-statistic {
+  display: grid;
+  outline: 5px solid rgba(245, 10, 237, 0.3);
+}
+
+.main-statistic-persent {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  outline: 5px solid rgba(245, 10, 237, 0.3);
+}
+
+.statistic-description {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  outline: 5px solid rgba(245, 10, 237, 0.3);
+}
+
+.main-links {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  outline: 5px solid rgba(24, 190, 201, 0.3);
+}
+
+.main-footer-index {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  outline: 5px solid rgba(0, 0, 0, 0.3);
+}
+
+.footer-links {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
