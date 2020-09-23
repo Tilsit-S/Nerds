@@ -22,7 +22,7 @@ header {
 
 .main-navigation-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: min-content 1fr;
   width: auto;
   height 115px;
   font-size: 16 px;
@@ -32,7 +32,7 @@ header {
 
 .site-navigation {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
 .main-header-logo {
@@ -43,11 +43,7 @@ header {
   outline: 5px solid rgba(0,255,0, 0.3);
 }
 
-.user-basket {
-  outline: 5px solid rgba(0,255,0, 0.3);
-}
-
-.main-header-description {
+.main-description {
   display: grid;
   grid-template-columns: 1fr 1fr;
   outline: 5px solid rgba(12, 20, 240, 0.3);
@@ -82,7 +78,7 @@ header {
   outline: 5px solid rgba(245, 10, 237, 0.3);
 }
 
-.header-title {        /*Долго, дорого, скурпулёзно*/
+.description-title {        /*Долго, дорого, скурпулёзно*/
   font-size: 55px;
   line-height: 55px;
 }
