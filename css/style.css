@@ -1,12 +1,10 @@
-root {
+:root {
   /* index-header*/
-  --light-gray: rgba(238,238,238,1);
+  --header-color: #EEEEEE;
 
 }
 
-header {
-  background-color: #EEEEEE;
-}
+/*СТИЛИ СТРАНИЦЫ*/
 
 .page {
   height: 100%;
@@ -20,9 +18,32 @@ header {
   outline: 5px solid rgba(255, 0, 0, 0.3);
 }
 
+
+/*HEADER*/
+
+.main-header {
+  background-color: var(--header-color);
+}
+
+.main-navigation {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.site-navigation {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.basket {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
 .main-navigation-grid {
   display: grid;
-  grid-template-columns: min-content 1fr;
   width: auto;
   height: 115px;
   font-size: 16px;
@@ -30,30 +51,62 @@ header {
   outline: 5px solid rgba(0,255,0, 0.3);
 }
 
-.site-navigation {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+.main-header-logo {
+  width: 159.87px;
+  height: 65.02px;
+  outline: 5px solid rgba(0,255,0, 0.3);
 }
 
-.main-header-logo {
-  outline: 5px solid rgba(0,255,0, 0.3);
+/*MAIN*/
+
+.main-description {                 /*Блок слева*/
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  outline: 5px solid rgba(12, 20, 240, 0.3);
+  background-color: var(--header-color);
+}
+
+.description-title {                /*Долго, дорого, скурпулёзно*/
+  font-size: 55px;
+  line-height: 55px;
+}
+
+.site-description {                 /*Математически выверенный дизайн для вашего сайта...*/
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.button {                           /*кнопка УЗНАТЬ БОЛЬШЕ*/
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.sliders {                          /*Изображение справа*/
+  outline: 5px solid rgba(12, 20, 240, 0.3);
+}
+
+.main-sections {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.web-sites {                        /*Веб-сайты, Приложения, Презентации*/
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.web-sites-description,             /*Пояснения к блокам*/
+.app-description,
+.presentations-description {
+  font-size: 16px;
+  line-height: 24px;
 }
 
 .main-navigation-wrapper {
   outline: 5px solid rgba(0,255,0, 0.3);
 }
 
-.main-description {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  outline: 5px solid rgba(12, 20, 240, 0.3);
-}
-
 .left-side-description {
-  outline: 5px solid rgba(12, 20, 240, 0.3);
-}
-
-.sliders {
   outline: 5px solid rgba(12, 20, 240, 0.3);
 }
 
@@ -78,60 +131,49 @@ header {
   outline: 5px solid rgba(245, 10, 237, 0.3);
 }
 
-.description-title {        /*Долго, дорого, скурпулёзно*/
-  font-size: 55px;
-  line-height: 55px;
-}
-
-.site-description {   /*Математически выверенный дизайн для вашего сайта...*/
+.list-title {                       /*С 2004 года любим точность во всём*/
   font-size: 16px;
   line-height: 24px;
 }
 
-.learn-more {         /*кнопка УЗНАТЬ БОЛЬШЕ*/
+.persent {                          /*Проценты*/
+  font-size: 45px;
+  line-height: 64px;
+}
+
+.sup-persent {                      /*символ %*/
+  font-size: 26px;
+  line-height: 40px;
+}
+
+.persent-comments {                 /*Пояснения*/
   font-size: 16px;
   line-height: 18px;
 }
 
-.list-title {         /*С 2004 года любим точность во всём*/
+.web-studio {                       /*Мы маленькая, но гордая...*/
+  font-size: 45px;
+  line-height: 45px;
+}
+
+.web-studio-description,            /*Выполняем заказы на разработку*/
+.orders,
+.orders-list {
   font-size: 16px;
   line-height: 24px;
 }
 
-.friendsship-title {  /*Давайте дружить, это выгодно*/
-  font-size: 36px;
-  line-height: 36px;
+.nerds-adress {                     /*Блок на карте*/
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
 }
 
-.friendsship-text {
-  font-size: 16px;
-  line-height: 22px;
-}
-
-.studio,
-.customers,
-.magazine,
-.contacts,
-.basket {
-  font-size: 16px;
+.nerds-adress-title {               /*NЁRDS DESIGN STUDIO*/
+  font-size: 18px;
   line-height: 30px;
 }
 
-.web-sites-title,
-.app-title,
-.presentations-title {
-  font-size: 24px;
-  line-height: 30px;
-}
-
-.web-sites-description,
-.app-description,
-.presentations-description {
-  font-size: 16px;
-  line-height: 24px;
-}
-
-.button {
+.nerds-adress-description {
   font-size: 16px;
   line-height: 18px;
 }
@@ -159,7 +201,9 @@ header {
   outline: 5px solid rgba(24, 190, 201, 0.3);
 }
 
-.main-footer-index {
+/*FOOTER*/
+
+.footer-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   outline: 5px solid rgba(0, 0, 0, 0.3);
@@ -170,7 +214,17 @@ header {
   grid-template-columns: 1fr 1fr 1fr;
 }
 
-.friendsship {
+.friendsship {                     /*Давайте дружить, это выгодно*/
   display: grid;
   grid-template-rows: 1fr 1fr;
+}
+
+.friendsship-title {                /*Давайте дружить, это выгодно*/
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.friendsship-text {                 /*Скидки для друзей*/
+  font-size: 16px;
+  line-height: 22px;
 }
