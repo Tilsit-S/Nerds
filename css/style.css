@@ -24,8 +24,8 @@ header {
   display: grid;
   grid-template-columns: min-content 1fr;
   width: auto;
-  height 115px;
-  font-size: 16 px;
+  height: 115px;
+  font-size: 16px;
   line-height: 20px;
   outline: 5px solid rgba(0,255,0, 0.3);
 }
