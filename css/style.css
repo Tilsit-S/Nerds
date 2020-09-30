@@ -1,6 +1,7 @@
 :root {
   /* index-header*/
   --header-color: #EEEEEE;
+  --basic-white: #ffffff;
 
 }
 
@@ -8,10 +9,12 @@
 
 .page {
   height: 100%;
+  background-color: var(--basic-white);
 }
 
 .page-body {
   min-height: 100%;
+  font-family: 'Roboto', Arial, sans-serif;
   display: grid;
   grid-template-rows: min-content 1fr min-content;
   align-content: start;
@@ -28,6 +31,11 @@
 .main-navigation {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  margin-left: 140px;
+  margin-right: 140px;
+  margin-top: 49px;
+  margin-bottom: 0px;
 }
 
 .site-navigation {
@@ -37,13 +45,17 @@
   line-height: 30px;
 }
 
-.basket {
-  display: grid;
-  grid-template-columns: 1fr;
+.basket {                                         /*Корзина*/
+  display: flex;
+  justify-content: flex-end;
+  width: 75px;
+  height: 30px;
+  margin-top: 26px;
+  margin-left: 50px;
+  outline: 5px solid rgba(0,255,0, 0.3);
 }
 
 .main-navigation-grid {
-  display: grid;
   width: auto;
   height: 115px;
   font-size: 16px;
@@ -52,6 +64,11 @@
 }
 
 .main-header-logo {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
   width: 159.87px;
   height: 65.02px;
   outline: 5px solid rgba(0,255,0, 0.3);
@@ -67,6 +84,7 @@
 }
 
 .description-title {                /*Долго, дорого, скурпулёзно*/
+  font-family: 'Roboto', sans-serif;
   font-size: 55px;
   line-height: 55px;
 }
@@ -85,14 +103,19 @@
   outline: 5px solid rgba(12, 20, 240, 0.3);
 }
 
-.main-sections {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+.main-sections {                    /*Веб-сайты, Приложения, Презентации*/
+  display: flex;
+  justify-content: space-around;
 }
 
 .web-sites {                        /*Веб-сайты, Приложения, Презентации*/
+  display: grid;
+  justify-content: center;
+  margin-top: 80px;
+  margin-bottom: 80px;
   font-size: 24px;
   line-height: 30px;
+  outline: 5px solid rgba(12, 20, 240, 0.3);
 }
 
 .web-sites-description,             /*Пояснения к блокам*/
@@ -163,6 +186,11 @@
   line-height: 24px;
 }
 
+.main-map {
+  min-width: 100%;
+  height: auto;
+}
+
 .nerds-adress {                     /*Блок на карте*/
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
@@ -173,7 +201,8 @@
   line-height: 30px;
 }
 
-.nerds-adress-description {
+.nerds-adress-description,          /*191186, Санкт-Петербург...*/
+.telephone-number {
   font-size: 16px;
   line-height: 18px;
 }
@@ -214,7 +243,7 @@
   grid-template-columns: 1fr 1fr 1fr;
 }
 
-.friendsship {                     /*Давайте дружить, это выгодно*/
+.friendsship {                     /*БЛОК Давайте дружить, это выгодно*/
   display: grid;
   grid-template-rows: 1fr 1fr;
 }
@@ -227,4 +256,10 @@
 .friendsship-text {                 /*Скидки для друзей*/
   font-size: 16px;
   line-height: 22px;
+}
+
+.partners {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
 }

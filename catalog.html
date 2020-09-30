@@ -3,27 +3,33 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
-    <header>
+  <body class="page-body">
+  <header class="main-header">
+    <div class="main-container">
       <nav class="main-navigation">
         <div class="main-navigation-grid">
           <a href="file:///C:/Users/user/Desktop/1472423-nerds-29/index.html" class="main-header-logo">
             <img src="img/nerds-logo.svg" width="159.87" height="65.02" alt="Логотип сайта Нёрдс">
           </a>
-          <div class="main-navigation-wrapper">
-            <ul class="site-navigation">
-              <li><a href="studio.html">СТУДИЯ</a></li>
-              <li><a href="customers.html">КЛИЕНТЫ</a></li>
-              <li><a href="catalog.html">МАГАЗИН</a></li>
-              <li><a href="blank.html">КОНТАКТЫ</a></li>
-              <li><a href="basket.html"><img src="img/cart-icon.svg" width="15" height="15">КОРЗИНА</a></li>
-            </ul>
-          </div>
+        </div>
+        <div class="main-navigation-wrapper">
+          <ul class="site-navigation">
+            <li><a href="studio.html">СТУДИЯ</a></li>
+            <li><a href="customers.html">КЛИЕНТЫ</a></li>
+            <li><a href="catalog.html">МАГАЗИН</a></li>
+            <li><a href="blank.html">КОНТАКТЫ</a></li>
+          </ul>
+        </div>
+        <div class="basket">
+          <a href="basket.html"><img src="img/cart-icon.svg" width="15" height="15">КОРЗИНА</a>
         </div>
       </nav>
-      <h1 class="site-promo">Магазин готовых шаблонов</h1>
-    </header>
+    </div>
+  </header>
     <main class="container">
         <div class="filter">
             <fieldset class="rich">
@@ -39,14 +45,14 @@
                 </ul>
             </fieldset>
             <fieldset class="characteristic">
-               <h2>ОСОБЕННОСТИ:</h2>
+              <h2>ОСОБЕННОСТИ:</h2>
                <ul>
                 <li><input>Слайдер</li>
                 <li><input>Блок преимуществ</li>
                 <li><input>Новости</li>
                 <li><input>Галерея</li>
                 <li><input>Корзина</li>
-            </ul>
+               </ul>
             </fieldset>
             <button class="result">ПОКАЗАТЬ</button>
         </div>
@@ -78,7 +84,7 @@
                     </div>
                   </div>
               </li>
-                <li>
+                <li class="partners">
                   <a href="#" class="partners">
                     <p class="pink-name">
                       <img src="img/img-pink-1.jpg" width="359" height="578">
@@ -92,21 +98,21 @@
                     </p>
                   </a>
                 </li>
-                <li>
+                <li class="partners">
                   <div class="partners">
                     <p class="mishka-name">
                       <img src="img/img-mishka-1.jpg" width="359" height="578">
                     </p>
                   </div>
                 </li>
-                <li>
+                <li class="partners">
                   <div class="partners">
                     <p class="aplus-name">
                       <img src="img/img-aplus-1.jpg" width="359" height="578">
                     </p>
                   </div>
                 </li>
-                <li>
+                <li class="partners">
                   <div class="partners">
                     <h2 class="kvast-name">
                       <img src="img/img-kvast-1.jpg" width="359" height="578">
