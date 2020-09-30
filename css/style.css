@@ -1,5 +1,4 @@
 :root {
-  /* index-header*/
   --header-color: #EEEEEE;
   --basic-white: #ffffff;
 
@@ -21,8 +20,7 @@
   outline: 5px solid rgba(255, 0, 0, 0.3);
 }
 
-
-/*HEADER*/
+/*INDEX*/
 
 .main-header {
   background-color: var(--header-color);
@@ -63,7 +61,7 @@
   outline: 5px solid rgba(0,255,0, 0.3);
 }
 
-.main-header-logo {
+.main-header-logo {                               /*изображение*/
   display: flex;
   justify-content: flex-start;
   margin-left: 0px;
@@ -76,39 +74,39 @@
 
 /*MAIN*/
 
-.main-description {                 /*Блок слева*/
+.main-description {                               /*Блок слева*/
   display: grid;
   grid-template-columns: 1fr 1fr;
   outline: 5px solid rgba(12, 20, 240, 0.3);
   background-color: var(--header-color);
 }
 
-.description-title {                /*Долго, дорого, скурпулёзно*/
+.description-title {                              /*Долго, дорого, скурпулёзно*/
   font-family: 'Roboto', sans-serif;
   font-size: 55px;
   line-height: 55px;
 }
 
-.site-description {                 /*Математически выверенный дизайн для вашего сайта...*/
+.site-description {                             /*Математически выверенный дизайн для вашего сайта...*/
   font-size: 16px;
   line-height: 24px;
 }
 
-.button {                           /*кнопка УЗНАТЬ БОЛЬШЕ*/
+.button {                                       /*кнопка УЗНАТЬ БОЛЬШЕ*/
   font-size: 16px;
   line-height: 18px;
 }
 
-.sliders {                          /*Изображение справа*/
+.sliders {                                       /*Изображение справа*/
   outline: 5px solid rgba(12, 20, 240, 0.3);
 }
 
-.main-sections {                    /*Веб-сайты, Приложения, Презентации*/
+.main-sections {                                 /*Веб-сайты, Приложения, Презентации*/
   display: flex;
   justify-content: space-around;
 }
 
-.web-sites {                        /*Веб-сайты, Приложения, Презентации*/
+.web-sites {                                     /*Веб-сайты, Приложения, Презентации*/
   display: grid;
   justify-content: center;
   margin-top: 80px;
@@ -118,7 +116,7 @@
   outline: 5px solid rgba(12, 20, 240, 0.3);
 }
 
-.web-sites-description,             /*Пояснения к блокам*/
+.web-sites-description,                           /*Пояснения к блокам*/
 .app-description,
 .presentations-description {
   font-size: 16px;
@@ -186,7 +184,7 @@
   line-height: 24px;
 }
 
-.main-map {
+.main-map {                         /*блок-карта*/
   min-width: 100%;
   height: auto;
 }
@@ -248,12 +246,12 @@
   grid-template-rows: 1fr 1fr;
 }
 
-.friendsship-title {                /*Давайте дружить, это выгодно*/
+.friendsship-title {               /*Давайте дружить, это выгодно*/
   font-size: 36px;
   line-height: 36px;
 }
 
-.friendsship-text {                 /*Скидки для друзей*/
+.friendsship-text {                /*Скидки для друзей*/
   font-size: 16px;
   line-height: 22px;
 }
@@ -264,8 +262,47 @@
   justify-content: flex-start;
 }
 
-.catalog-title {
+
+/*CATALOG*/
+
+.catalog-title {                          /*Магазин готовых шаблонов*/
   background-color: var(--header-color);
   font-size: 55px;
   line-height: 55px;
+}
+
+.filter-description {         /*СТОИМОСТЬ, СЕТКА, ОСОБЕННОСТИ*/
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.range {                      /*от...до...*/
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.grid,
+.characteristic {
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.sort {                       /*Сортировать*/
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.sorting {                    /*По цене, типу, названию*/
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.pagination-link {            /*Кнопки 1...2...3*/
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.button-next {
+  font-size: 16px;
+  line-height: 18px;
 }
