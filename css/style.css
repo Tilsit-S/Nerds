@@ -263,3 +263,9 @@
   flex-direction: row;
   justify-content: flex-start;
 }
+
+.catalog-title {
+  background-color: var(--header-color);
+  font-size: 55px;
+  line-height: 55px;
+}
