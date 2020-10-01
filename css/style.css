@@ -1,13 +1,17 @@
 :root {
-  --header-color: #EEEEEE;
+  --header-color: rgba(238, 238, 238, 1);
   --basic-white: #ffffff;
-
+  --subtitles: rgba(0, 0, 0, 1);
+  --index-button-text: rgba(255, 255, 255, 1);
+  --red-button: rgba(251, 86, 90, 1);
+  --green-button: rgba(0, 202, 116, 1);
+  --yellow-button: rgba(239, 200, 73, 1);
 }
 
 /*СТИЛИ СТРАНИЦЫ*/
 
 .page {
-  height: 100%;
+  min-width: 100%;
   background-color: var(--basic-white);
 }
 
@@ -30,36 +34,38 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   justify-content: center;
-  margin-left: 140px;
-  margin-right: 140px;
-  margin-top: 49px;
-  margin-bottom: 0px;
+  outline: 5px solid rgba(255, 0, 0, 0.3);
 }
 
-.site-navigation {
+.site-navigation {                                /*Студия, клиенты, магазин, контакты*/
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   font-size: 16px;
   line-height: 30px;
+  color: var(--subtitles);
 }
+
+.header-a {                                       /*Ссылки*/
+  text-decoration: none;
+  color: var(--subtitles);
+}
+
+.button {                                         /*Кнопки в index*/
+  text-decoration: none;
+  color: var(--index-button-text);
+}
+
 
 .basket {                                         /*Корзина*/
   display: flex;
+  flex-wrap: wrap;
   justify-content: flex-end;
-  width: 75px;
-  height: 30px;
+  color: var(--subtitles);
   margin-top: 26px;
   margin-left: 50px;
   outline: 5px solid rgba(0,255,0, 0.3);
 }
 
-.main-navigation-grid {
-  width: auto;
-  height: 115px;
-  font-size: 16px;
-  line-height: 20px;
-  outline: 5px solid rgba(0,255,0, 0.3);
-}
 
 .main-header-logo {                               /*изображение*/
   display: flex;
@@ -82,7 +88,6 @@
 }
 
 .description-title {                              /*Долго, дорого, скурпулёзно*/
-  font-family: 'Roboto', sans-serif;
   font-size: 55px;
   line-height: 55px;
 }
@@ -92,9 +97,30 @@
   line-height: 24px;
 }
 
-.button {                                       /*кнопка УЗНАТЬ БОЛЬШЕ*/
+.description-button,
+.order-button,
+.description-button {                                       /*кнопка УЗНАТЬ БОЛЬШЕ*/
   font-size: 16px;
   line-height: 18px;
+  color: var(--index-button-text);
+  text-decoration: none;
+  background-color: var(--red-button);
+}
+
+.app-button {
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--index-button-text);
+  text-decoration: none;
+  background-color: var(--green-button);
+}
+
+.presentations-button {
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--index-button-text);
+  text-decoration: none;
+  background-color: var(--yellow-button);
 }
 
 .sliders {                                       /*Изображение справа*/
@@ -124,6 +150,9 @@
 }
 
 .main-navigation-wrapper {
+  display: grid;
+  width: 437px;
+  height: 30px;
   outline: 5px solid rgba(0,255,0, 0.3);
 }
 
@@ -292,7 +321,10 @@
   line-height: 30px;
 }
 
-.sorting {                    /*По цене, типу, названию*/
+.sorting-link {                    /*По цене, типу, названию*/
+  text-decoration: none;
+  color: var(--subtitles);
+  background-color: #ffffff;
   font-size: 14px;
   line-height: 18px;
 }
@@ -302,7 +334,28 @@
   line-height: 18px;
 }
 
-.button-next {
+.button-next {                /*Кнопка Следующая*/
   font-size: 16px;
   line-height: 18px;
+  color: var(--subtitles);
+  background-color: var(--header-color);
+}
+
+.result {                     /*Кнопка ПОКАЗАТЬ*/
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--subtitles);
+  background-color: var(--header-color);
+}
+
+.sedona-popap {
+  background-color: var(--header-color);
+}
+
+.sedona-price {               /*9900*/
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--index-button-text);
+  text-decoration: none;
+  background-color: var(--red-button);
 }
