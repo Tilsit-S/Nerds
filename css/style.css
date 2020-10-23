@@ -1,11 +1,22 @@
 :root {
   --header-color: rgba(238, 238, 238, 1);
   --basic-white: #ffffff;
+  --basic-font-color: #000000;
   --subtitles: rgba(0, 0, 0, 1);
   --index-button-text: rgba(255, 255, 255, 1);
   --red-button: rgba(251, 86, 90, 1);
   --green-button: rgba(0, 202, 116, 1);
   --yellow-button: rgba(239, 200, 73, 1);
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(1px 1px 1px 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
 }
 
 /*СТИЛИ СТРАНИЦЫ*/
@@ -18,10 +29,8 @@
 .page-body {
   min-height: 100%;
   font-family: 'Roboto', Arial, sans-serif;
-  display: grid;
-  grid-template-rows: min-content 1fr min-content;
-  align-content: start;
-  outline: 5px solid rgba(255, 0, 0, 0.3);
+  color: var(--basic-font-color);
+  outline: 5px solid black;
 }
 
 /*INDEX*/
@@ -34,6 +43,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 1160px;
+  height: 66px;
   outline: 5px solid rgba(255, 0, 0, 0.3);
 }
 
@@ -48,15 +59,19 @@
   color: var(--subtitles);
 }
 
-.site-navigation-link {                           /*Ссылки*/
+.site-navigation-link {                               /*Ссылки*/
   display: block;
   text-decoration: none;
   padding-left: 23px;
   padding-right: 22px;
   color: var(--subtitles);
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
 }
 
-.button {                                         /*Кнопки в index*/
+.button {                                             /*Кнопки в index*/
   text-decoration: none;
   color: var(--index-button-text);
 }
@@ -66,6 +81,10 @@
   color: var(--subtitles);
   text-decoration: none;
   outline: 5px solid rgba(0,255,0, 0.3);
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
 }
 
 
@@ -85,6 +104,8 @@
 .main-description {                               /*Блок слева*/
   display: grid;
   grid-template-columns: 1fr 1fr;
+  width: 1157px;
+  height: 431px;
   outline: 5px solid rgba(12, 20, 240, 0.3);
   background-color: var(--header-color);
 }
@@ -98,31 +119,66 @@
 .site-description {                             /*Математически выверенный дизайн для вашего сайта...*/
   font-size: 16px;
   line-height: 24px;
+  font-weight: 500;
 }
 
-.order-button,
+
 .description-button {                                       /*кнопка УЗНАТЬ БОЛЬШЕ*/
   font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: var(--index-button-text);
+  text-decoration: none;
+  background-color: var(--red-button);
+  border-radius: 3px;
+  border: none;
+}
+
+.order-button {                                           /*кнопки ЗАКАЗАТЬ*/
+  display: block;
+  width: 160px;
+  padding: 15px 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 500;
   line-height: 18px;
   color: var(--index-button-text);
   text-decoration: none;
   background-color: var(--red-button);
+  border-radius: 3px;
+  border: none;
 }
 
 .app-button {
+  display: block;
+  width: 160px;
+  padding: 15px 0;
+  text-align: center;
+  text-transform: uppercase;
   font-size: 16px;
   line-height: 18px;
   color: var(--index-button-text);
   text-decoration: none;
   background-color: var(--green-button);
+  border-radius: 3px;
+  border: none;
 }
 
 .presentations-button {
+  display: block;
+  width: 160px;
+  padding: 15px 0;
+  text-align: center;
+  text-transform: uppercase;
   font-size: 16px;
   line-height: 18px;
   color: var(--index-button-text);
   text-decoration: none;
   background-color: var(--yellow-button);
+  border-radius: 3px;
+  border: none;
 }
 
 .sliders {                                       /*Изображение справа*/
@@ -132,12 +188,13 @@
 .main-sections {                                 /*Веб-сайты, Приложения, Презентации*/
   display: flex;
   justify-content: space-around;
+  padding: 80px;
 }
 
 .web-sites {                                     /*Веб-сайты, Приложения, Презентации*/
   display: grid;
-  justify-content: center;
-  margin-top: 80px;
+  width: 299px;
+
   margin-bottom: 80px;
   font-size: 24px;
   line-height: 30px;
@@ -149,6 +206,19 @@
 .presentations-description {
   font-size: 16px;
   line-height: 24px;
+  font-weight: 400;
+  margin-top: 16px;
+  margin-bottom: 33px;
+}
+
+.web-sites-title,                                 /*Заголовки*/
+.app-title,
+.presentations-title {
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-top: 19px;
 }
 
 .left-side-description {
@@ -156,8 +226,7 @@
 }
 
 .main-container {
-
-  width: 1200px;
+  width: 1160px;
   padding-left: 20px;
   padding-right: 20px;
   margin-left: auto;
@@ -184,55 +253,49 @@
 .list-title {                       /*С 2004 года любим точность во всём*/
   font-size: 16px;
   line-height: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .persent {                          /*Проценты*/
   font-size: 45px;
   line-height: 64px;
+  font-weight: 700;
 }
 
 .sup-persent {                      /*символ %*/
   font-size: 26px;
   line-height: 40px;
+  font-weight: 700;
 }
 
 .persent-comments {                 /*Пояснения*/
   font-size: 16px;
   line-height: 18px;
+  font-weight: 400;
 }
 
 .web-studio {                       /*Мы маленькая, но гордая...*/
   font-size: 45px;
   line-height: 45px;
+  font-weight: 500;
 }
 
 .web-studio-description,            /*Выполняем заказы на разработку*/
-.orders,
 .orders-list {
   font-size: 16px;
   line-height: 24px;
+  font-weight: 400;
 }
 
-.main-map {                         /*блок-карта*/
-  min-width: 100%;
-  height: auto;
-}
-
-.nerds-adress {                     /*Блок на карте*/
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
-}
-
-.nerds-adress-title {               /*NЁRDS DESIGN STUDIO*/
-  font-size: 18px;
-  line-height: 30px;
-}
-
-.nerds-adress-description,          /*191186, Санкт-Петербург...*/
-.telephone-number {
+.orders {
   font-size: 16px;
-  line-height: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-weight: 700;
 }
+
 
 .main-statistic {
   display: grid;
@@ -257,57 +320,298 @@
   outline: 5px solid rgba(24, 190, 201, 0.3);
 }
 
-/*FOOTER*/
+/*=======================MAP-NAVIGATION==============================*/
+
+.map-navigation {
+  width: 100%;
+  margin-top: 60px;
+  position: relative;
+  outline: 5px solid rgba(24, 190, 201, 0.3);
+}
+
+iframe {
+
+}
+
+.nerds-container {                /*Блок на карте*/
+  display: block;
+  position: absolute;
+  top: 54px;
+  left: 50%;
+  transform: translateX(-580px);
+  outline: 5px solid rgba(24, 190, 201, 0.3);
+}
+
+.nerds-adress {
+  display: block;
+  width: 400px;
+  padding: 32px 10px 46px;
+  background-color: var(--basic-white);
+}
+
+.nerds-adress-title {               /*NЁRDS DESIGN STUDIO*/
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-left: 38px;
+  margin-top: 49px;
+  margin-right: 76px;
+  margin-bottom: 23px;
+}
+
+.nerds-adress-description {
+  margin-left: 50px;
+  margin-top: 23px;
+  margin-right: 39px;
+}
+
+.description-button {               /*Кнопка "НАПИШИТЕ НАМ"*/
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  display: block;
+  width: 219px;
+  margin-left: 40px;
+  margin-top: 35px;
+  padding: 16px 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.telephone-number {
+  margin-left: 50px;
+  margin-right: 39px;
+  font-weight: 400;
+}
+
+.nerds-adress-description,          /*191186, Санкт-Петербург...*/
+.telephone-number {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+/*===============================================================*/
+
+/*==========================FOOTER===============================*/
+
+.main-footer-index {
+  display: block;
+  padding-top: 68px;
+  padding-bottom: 68px;
+}
 
 .footer-container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  outline: 5px solid rgba(0, 0, 0, 0.3);
+  grid-template-columns: 1fr 2fr;
+  width: 1060px;
+  outline: 5px solid yellowgreen;
+  margin-left: auto;
+  margin-right: auto;
+
 }
 
 .footer-links {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 81px;
+  height: 81px;
+  background: linear-gradient(0deg, #E1E1E1, #E1E1E1), #FFFFFF;
+  border-radius: 50%;
 }
 
 .friendsship {                     /*БЛОК Давайте дружить, это выгодно*/
-  display: grid;
-  grid-template-rows: 1fr 1fr;
+  display: flex;
+  flex-wrap: wrap;
+
 }
 
 .friendsship-title {               /*Давайте дружить, это выгодно*/
+  font-weight: 700;
   font-size: 36px;
-  line-height: 36px;
+  margin-top: 4px;
+  margin-bottom: 10px;
 }
 
 .friendsship-text {                /*Скидки для друзей*/
   font-size: 16px;
-  line-height: 22px;
+  font-weight: 400;
+  margin: 0;
 }
 
-.partners {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
+/*=============================================================*/
+
+
+
+/*=======================CATALOG===============================*/
+
+
+.partner {
+  position: absolute;
+  overflow: hidden;
+
 }
 
-
-/*CATALOG*/
+.partner:hover .popap {
+  transform: translateY(0);
+}
 
 .catalog-title {                          /*Магазин готовых шаблонов*/
-  background-color: var(--header-color);
+  display: block;
   font-size: 55px;
   line-height: 55px;
+  font-weight: 500;
+  background-color: var(--header-color);
+  text-align: center;
+  padding-top: 72px;
+  padding-bottom: 108px;
+  outline: 5px solid yellowgreen;
 }
 
 .filter-description {         /*СТОИМОСТЬ, СЕТКА, ОСОБЕННОСТИ*/
   font-size: 18px;
   line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
-.range {                      /*от...до...*/
+.radio-button {
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 400;
+  list-style-type: none;
+}
+
+/*==================================================================*/
+
+
+/*=======================MAIN-CATALOG============================*/
+
+.catalog-container {
+  display: block;
+  margin: 0 auto;
+  padding-top: 55px;
+}
+
+.container-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.filter {
+  display: block;
+  margin-right: 141px;
+  outline: 5px solid yellowgreen;
+}
+
+.catalog-partners {
+  display: block;
+  outline: 5px solid red;
+}
+
+/*========================Блок стомости с ползунком========================*/
+.range {
   font-size: 16px;
   line-height: 22px;
+}
+
+.filter-item {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.range-filter {
+  width: 260px;
+  margin-top: 49px;
+}
+
+.filter-item legend {
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.range-controls {
+  position: relative;
+  height: 41px;
+  margin-bottom: 15px;
+  padding-top: 39px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: var(--header-color);
+  border-radius: 5px;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background: rgba(215, 220, 223, 1);
+}
+
+.range-controls .bar {
+  width: 70%;
+  height: 2px;
+  background: rgba(0, 202, 116, 1);
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: 31px;
+  left: 0;
+  width: 4px;
+  height: 4px;
+  padding: 0;
+  border: 8px solid var(--basic-white);
+  background-color: rgba(171, 171, 171, 1);
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+.range-controls .toggle-min {
+  left: 18px;
+}
+
+.range-controls .toggle-max {
+  left: 160px;
+}
+
+.price-controls {
+  display: flex;
+  justify-content: space-between;
+}
+
+.price-controls label {
+  text-transform: uppercase;
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 16px;
+}
+
+.price-controls input {
+  width: 60px;
+  padding: 10px;
+  margin-left: 10px;
+  text-align: center;
+  color: var(--subtitles);
+  border: none;
+  border-radius: 5px;
+  background: rgba(238, 238, 238, 1);
+  font-family: inherit;
+  font-size: inherit;
 }
 
 .grid,
@@ -316,9 +620,14 @@
   line-height: 19px;
 }
 
-.sort {                       /*Сортировать*/
+/*==============================Блок СОРТИРОВАТЬ ПО...==================*/
+
+.sorting {                       /*Сортировать*/
   font-size: 18px;
   line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  list-style-type: none;
 }
 
 .sorting-link {                    /*По цене, типу, названию*/
@@ -327,6 +636,8 @@
   background-color: #ffffff;
   font-size: 14px;
   line-height: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
 }
 
 .sorting :nth-child(2) {            /*По типу*/
@@ -337,33 +648,112 @@
   opacity: 0.3;
 }
 
+.pagination {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 .pagination-link {            /*Кнопки 1...2...3*/
   font-size: 16px;
   line-height: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.pagination:not:first-child {
+  background-color: var(--header-color);
+}
+
+.pagination:first-child {
+  background-color: var(--basic-white);
 }
 
 .button-next {                /*Кнопка Следующая*/
+  display: block;
+  width: 160px;
+  padding: 12px 75px;
+  font-weight: 500;
+  text-align: center;
+  text-transform: uppercase;
   font-size: 16px;
   line-height: 18px;
   color: var(--subtitles);
   background-color: var(--header-color);
+  border: none;
+  border-radius: 3px;
 }
 
 .result {                     /*Кнопка ПОКАЗАТЬ*/
+  display: block;
+  width: 260px;
+  padding: 15px 0;
+  text-align: center;
+  text-transform: uppercase;
   font-size: 16px;
   line-height: 18px;
+  font-weight: 500;
   color: var(--subtitles);
   background-color: var(--header-color);
+  border: none;
+  border-radius: 3px;
+  margin-top: 50px;
 }
 
-.sedona-popap {
+.popap {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
   background-color: var(--header-color);
+  transform: translateY(100%);
 }
 
-.sedona-price {               /*9900*/
+.price {               /*9900*/
   font-size: 16px;
   line-height: 18px;
   color: var(--index-button-text);
   text-decoration: none;
   background-color: var(--red-button);
 }
+/*==========================================================================*/
+
+/*========================Сортировать=============================*/
+
+.sort {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+ul.sorting {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.sorting-link {
+  margin-right: 25px;
+}
+
+.buttons-up-down {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+}
+
+/*=====================СПИСОК ПАРТНЁРОВ=======================*/
+.sites {
+  display: block;
+  outline: 5px solid green;
+}
+
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 5px;
+}
+
+/*==============================================================*/

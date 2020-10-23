@@ -9,125 +9,155 @@
   </head>
   <body class="page-body">
     <header class="main-header">
-      <div class="main-container">
-        <nav class="main-navigation">
-          <a href="index.html" class="main-header-logo">
-            <img src="img/nerds-logo.svg" width="159.87" height="65.02" alt="Логотип сайта Нёрдс">
-          </a>
-          <div class="main-navigation-wrapper">
-            <ul class="site-navigation">
-              <li><a href="studio.html" class="header-a">СТУДИЯ</a></li>
-              <li><a href="customers.html" class="header-a">КЛИЕНТЫ</a></li>
-              <li><a href="catalog.html" class="header-a">МАГАЗИН</a></li>
-              <li><a href="blank.html" class="header-a">КОНТАКТЫ</a></li>
-            </ul>
-          </div>
-          <div class="basket">
-            <a href="basket.html" class="header-a"><img src="img/cart-icon.svg" width="15" height="15">КОРЗИНА</a>
-          </div>
-        </nav>
-        <h1 class="catalog-title">Магазин готовых шаблонов</h1>
-      </div>
+      <nav class="main-navigation main-container">
+        <a href="index.html" class="main-header-logo">
+          <img src="img/nerds-logo.svg" width="159.87" height="65.02" alt="Логотип сайта Нёрдс">
+        </a>
+        <ul class="site-navigation">
+          <li><a href="studio.html" class="site-navigation-link">студия</a></li>
+          <li><a href="customers.html" class="site-navigation-link">клиенты</a></li>
+          <li><a href="catalog.html" class="site-navigation-link">магазин</a></li>
+          <li><a href="blank.html" class="site-navigation-link">контакты</a></li>
+        </ul>
+        <a href="basket.html" class="basket-link"><img src="img/cart-icon.svg" width="15" height="15">корзина</a>
+      </nav>
+      <h1 class="catalog-title">Магазин готовых шаблонов</h1>
     </header>
-    <main class="container">
+    <main class="catalog-container">
+      <div class="container-wrapper">
         <div class="filter">
-            <fieldset class="rich">
-              <h2 class="filter-description">СТОИМОСТЬ</h2>
-              <div class="range">
-                ОТ<input>ДО<input>
+          <form>
+            <fieldset class="filter-item">
+              <legend>Стоимость</legend>
+              <div class="range-filter">
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar" style="
+                      width: 30%;
+                      margin-left: 20%;
+                    "></div>
+                  </div>
+                  <div class="toggle toggle-min" tabindex="0" style="
+                    left: 20%;
+                  "></div>
+                  <div class="toggle toggle-max" tabindex="0" style="
+                    left: 50%;
+                  "></div>
+                </div>
+                <div class="price-controls">
+                  <label class="min-price">
+                    от <input type="number" name="min-price" value="0">
+                  </label>
+                  <label class="max-price">
+                    до <input type="number" name="max-price" value="15000">
+                  </label>
+                </div>
               </div>
             </fieldset>
+          </form>
             <fieldset class="grid">
-                <h2 class="filter-description">СЕТКА:</h2>
-                <ul>
-                  <li><input>Адаптивная</li>
-                  <li><input>Фиксированная</li>
-                  <li><input>Резиновая</li>
-                </ul>
+              <h2 class="filter-description">Сетка:</h2>
+              <ul class="radio-button">
+                <li><input type="radio">Адаптивная</li>
+                <li><input type="radio">Фиксированная</li>
+                <li><input type="radio">Резиновая</li>
+              </ul>
             </fieldset>
             <fieldset class="characteristic">
-              <h2 class="filter-description">ОСОБЕННОСТИ:</h2>
-               <ul>
-                <li><input>Слайдер</li>
-                <li><input>Блок преимуществ</li>
-                <li><input>Новости</li>
-                <li><input>Галерея</li>
-                <li><input>Корзина</li>
-               </ul>
+              <h2 class="filter-description">Особенности:</h2>
+              <ul class="radio-button">
+                <li><input type="radio">Слайдер</li>
+                <li><input type="radio">Блок преимуществ</li>
+                <li><input type="radio">Новости</li>
+                <li><input type="radio">Галерея</li>
+                <li><input type="radio">Корзина</li>
+              </ul>
             </fieldset>
-            <button class="result">ПОКАЗАТЬ</button>
+            <button class="result">Показать</button>
         </div>
-        <div class="sort">
-            <p class="sort">СОРТИРОВАТЬ:</p>
+        <div class="catalog-partners">
+          <div class="sort">
+            <p class="sorting">Сортировать:</p>
             <ul class="sorting">
-              <li><a class="sorting-link">ПО ЦЕНЕ</a></li>
-              <li><a href="#" class="sorting-link">ПО ТИПУ</a></li>
-              <li><a href="#" class="sorting-link">ПО НАЗВАНИЮ</a></li>
+              <li><a class="sorting-link">По цене</a></li>
+              <li><a href="#" class="sorting-link">По типу</a></li>
+              <li><a href="#" class="sorting-link">По названию</a></li>
             </ul>
-            <div class="path-buttons-up-down">
               <div class="buttons-up-down">
                 <a class="down" href="#">down</a>
                 <a class="up" href="#">up</a>
               </div>
-            </div>
-        </div>
-        <section class="sites">
-            <ul class="partners-list">
+          </div>
+          <section class="sites">
+            <ul class="portfolio-list">
               <li class="partners">
-                  <div class="sedona-partner">
-                    <p class="sedona-name">
-                      <img src="img/img-sedona-1.jpg" width="359" height="578">
-                    </p>
-                    <div class="sedona-popap">
-                      <h3>SEDONA</h3>
-                      <p class="sedona-text">Информационный сайт для туристов</p>
-                      <span class="sedona-price">9 900 руб.</span>
-                    </div>
+                <div class="partner">
+                  <p class="name">
+                    <img src="img/img-sedona-1.jpg" width="359" height="578" alt="Седона изображение">
+                  </p>
+                  <div class="popap">
+                    <h3>SEDONA</h3>
+                    <p class="text">Информационный сайт для туристов</p>
+                    <span class="price">9 900 руб.</span>
                   </div>
+                </div>
               </li>
-                <li class="partners">
-                  <a href="#" class="partners">
-                    <p class="pink-name">
-                      <img src="img/img-pink-1.jpg" width="359" height="578">
-                    </p>
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="partners">
-                    <p class="barbershop-name">
-                      <img src="img/img-barbershop-1.jpg" width="359" height="578">
-                    </p>
-                  </a>
-                </li>
-                <li class="partners">
-                  <div class="partners">
-                    <p class="mishka-name">
-                      <img src="img/img-mishka-1.jpg" width="359" height="578">
-                    </p>
-                  </div>
-                </li>
-                <li class="partners">
-                  <div class="partners">
-                    <p class="aplus-name">
-                      <img src="img/img-aplus-1.jpg" width="359" height="578">
-                    </p>
-                  </div>
-                </li>
-                <li class="partners">
-                  <div class="partners">
-                    <h2 class="kvast-name">
-                      <img src="img/img-kvast-1.jpg" width="359" height="578">
-                    </h2>
-                  </div>
-                </li>
+              <li class="partners">
+                <a href="#" class="partners">
+                  <p class="pink-name">
+                    <img src="img/img-pink-1.jpg" width="359" height="578" alt="Пинк изображение">
+                  </p>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="partners">
+                  <p class="barbershop-name">
+                    <img src="img/img-barbershop-1.jpg" width="359" height="578" alt="Барбершоп изображение">
+                  </p>
+                </a>
+              </li>
+              <li class="partners">
+                <div class="partners">
+                  <p class="mishka-name">
+                    <img src="img/img-mishka-1.jpg" width="359" height="578" alt="Мишка изображение">
+                  </p>
+                </div>
+              </li>
+              <li class="partners">
+                <div class="partners">
+                  <p class="aplus-name">
+                    <img src="img/img-aplus-1.jpg" width="359" height="578" alt="Эплус изображение">
+                  </p>
+                </div>
+              </li>
+              <li class="partners">
+                <div class="partners">
+                  <h2 class="kvast-name">
+                    <img src="img/img-kvast-1.jpg" width="359" height="578" alt="Кваст изображение">
+                  </h2>
+                </div>
+              </li>
             </ul>
-        </section>
-        <ul class="pagination">
-          <li><a class="pagination-link">1</a></li>
-          <li><a class="pagination-link">2</a></li>
-          <li><a class="pagination-link">3</a></li>
-          <li><a class="button-next">СЛЕДУЮЩАЯ</a></li>
-        </ul>
+            <ul class="pagination">
+              <li><a class="pagination-link">1</a></li>
+              <li><a class="pagination-link">2</a></li>
+              <li><a class="pagination-link">3</a></li>
+              <li><a class="button-next">Следующая</a></li>
+            </ul>
+          </section>
+        </div>
+      </div>
+      <section class="map-navigation">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1413.2261096791!2d30.32149813686501!3d59.93872073358416!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1601982449388!5m2!1sru!2sru" width="100%" height="420" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" width="1440" height="416" title="Офис компании по адресу: ул. Б. Конюшенная, д. 19/8, Санкт-Петербург"></iframe>
+        <div class="nerds-container">
+          <div class="nerds-adress">
+            <h3 class="nerds-adress-title">nёrds design studio</h3>
+            <p class="nerds-adress-description">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+            <span class="telephone-number">тел. +7(812)275-75-75</span>
+            <a href="#" class="description-button">напишите нам</a>
+          </div>
+        </div>
+      </section>
     </main>
     <footer class="main-footer-index">
       <div class="footer-container">
