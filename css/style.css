@@ -30,13 +30,23 @@
   min-height: 100%;
   font-family: 'Roboto', Arial, sans-serif;
   color: var(--basic-font-color);
-  outline: 5px solid black;
+  outline: 1px solid black;
 }
 
 /*INDEX*/
 
 .main-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   background-color: var(--header-color);
+}
+
+.navigation-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1160px;
 }
 
 .main-navigation {
@@ -44,8 +54,8 @@
   justify-content: space-between;
   align-items: center;
   width: 1160px;
-  height: 66px;
-  outline: 5px solid rgba(255, 0, 0, 0.3);
+  padding-top: 40px;
+  outline: 1px solid rgba(255, 0, 0, 0.3);
 }
 
 .site-navigation {                                /*Студия, клиенты, магазин, контакты*/
@@ -54,8 +64,8 @@
   font-size: 16px;
   line-height: 30px;
   list-style: none;
-  margin: 0;
-  padding: 0;
+  padding-right: 85px;
+  margin-bottom: 0px;
   color: var(--subtitles);
 }
 
@@ -80,11 +90,16 @@
 .basket-link {                                         /*Корзина*/
   color: var(--subtitles);
   text-decoration: none;
-  outline: 5px solid rgba(0,255,0, 0.3);
+  outline: 1px solid rgba(0,255,0, 0.3);
   text-transform: uppercase;
   font-weight: 500;
   font-size: 16px;
   line-height: 30px;
+  padding-top: 20px;
+}
+
+.basket-picture {
+  padding-right: 20px;
 }
 
 
@@ -96,23 +111,25 @@
   margin-bottom: 0px;
   width: 160px;
   height: 65px;
-  outline: 5px solid rgba(0,255,0, 0.3);
+  outline: 1px solid rgba(0,255,0, 0.3);
 }
 
 /*MAIN*/
 
 .main-description {                               /*Блок слева*/
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  width: 1157px;
-  height: 431px;
-  outline: 5px solid rgba(12, 20, 240, 0.3);
+  grid-template-columns: 1fr 2fr;
+  outline: 1px solid rgba(12, 20, 240, 0.3);
   background-color: var(--header-color);
 }
 
 .description-title {                              /*Долго, дорого, скурпулёзно*/
+  display: flex;
+  flex-wrap: wrap;
   font-size: 55px;
   line-height: 55px;
+  margin-bottom: 0;
+  padding-top: 5px;
   font-weight: 500;
 }
 
@@ -120,6 +137,7 @@
   font-size: 16px;
   line-height: 24px;
   font-weight: 500;
+  margin-top: 25px;
 }
 
 
@@ -127,6 +145,11 @@
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
+  width: 240px;
+  margin-left: 0;
+  margin-top: 35px;
+  padding-top: 18px;
+  padding-bottom: 15px;
   text-transform: uppercase;
   color: var(--index-button-text);
   text-decoration: none;
@@ -182,23 +205,27 @@
 }
 
 .sliders {                                       /*Изображение справа*/
-  outline: 5px solid rgba(12, 20, 240, 0.3);
+  margin-left: 10px;
+  outline: 1px solid rgba(12, 20, 240, 0.3);
 }
 
 .main-sections {                                 /*Веб-сайты, Приложения, Презентации*/
+  margin-top: 80px;
+}
+
+.servers {
   display: flex;
-  justify-content: space-around;
-  padding: 80px;
+  justify-content: space-between;
 }
 
 .web-sites {                                     /*Веб-сайты, Приложения, Презентации*/
   display: grid;
   width: 299px;
-
   margin-bottom: 80px;
   font-size: 24px;
   line-height: 30px;
-  outline: 5px solid rgba(12, 20, 240, 0.3);
+  margin-right: 100px;
+  outline: 1px solid rgba(12, 20, 240, 0.3);
 }
 
 .web-sites-description,                           /*Пояснения к блокам*/
@@ -207,7 +234,6 @@
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
-  margin-top: 16px;
   margin-bottom: 33px;
 }
 
@@ -218,36 +244,39 @@
   line-height: 30px;
   text-transform: uppercase;
   font-weight: 700;
-  margin-top: 19px;
+  margin-top: 23px;
+  margin-bottom: 0;
 }
 
 .left-side-description {
-  outline: 5px solid rgba(12, 20, 240, 0.3);
+  padding-top: 20px;
+  outline: 1px solid rgba(12, 20, 240, 0.3);
 }
 
 .main-container {
   width: 1160px;
-  padding-left: 20px;
-  padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
-  outline: 5px solid rgba(245, 10, 237, 0.3);
+  outline: 1px solid rgba(245, 10, 237, 0.3);
 }
 
 .main-sections {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  outline: 5px solid rgba(245, 10, 237, 0.3);
+  outline: 1px solid rgba(245, 10, 237, 0.3);
 }
 
 .main-specification {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  outline: 5px solid rgba(245, 10, 237, 0.3);
+  grid-template-columns: 2fr 1fr;
+  padding-top: 40px;
+  outline: 1px solid rgba(245, 10, 237, 0.3);
 }
 
 .statistics {
-  outline: 5px solid rgba(245, 10, 237, 0.3);
+  padding-left: 30px;
+  padding-top: 3px;
+  outline: 1px solid rgba(245, 10, 237, 0.3);
 }
 
 .list-title {                       /*С 2004 года любим точность во всём*/
@@ -255,6 +284,8 @@
   line-height: 24px;
   font-weight: 700;
   text-transform: uppercase;
+  margin-top: 32px;
+  padding-left: 18px;
 }
 
 .persent {                          /*Проценты*/
@@ -279,6 +310,7 @@
   font-size: 45px;
   line-height: 45px;
   font-weight: 500;
+  margin-bottom: 33px;
 }
 
 .web-studio-description,            /*Выполняем заказы на разработку*/
@@ -288,49 +320,57 @@
   font-weight: 400;
 }
 
+.orders-list {
+  line-height: 3;
+}
+
+.description-list {
+  margin-top: 0px;
+}
+
 .orders {
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
   text-transform: uppercase;
   font-weight: 700;
+  margin-top: 40px;
+  margin-bottom: 10px;
 }
 
 
 .main-statistic {
   display: grid;
-  outline: 5px solid rgba(245, 10, 237, 0.3);
+  outline: 1px solid rgba(245, 10, 237, 0.3);
 }
 
 .main-statistic-persent {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  outline: 5px solid rgba(245, 10, 237, 0.3);
+  outline: 1px solid rgba(245, 10, 237, 0.3);
 }
 
 .statistic-description {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  outline: 5px solid rgba(245, 10, 237, 0.3);
+  outline: 1px solid rgba(245, 10, 237, 0.3);
 }
 
 .main-links {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  outline: 5px solid rgba(24, 190, 201, 0.3);
+  margin-top: 48px;
+  margin-left: 33px;
+  outline: 1px solid rgba(24, 190, 201, 0.3);
 }
 
 /*=======================MAP-NAVIGATION==============================*/
 
 .map-navigation {
   width: 100%;
-  margin-top: 60px;
+  margin-top: 120px;
   position: relative;
-  outline: 5px solid rgba(24, 190, 201, 0.3);
-}
-
-iframe {
-
+  outline: 1px solid rgba(24, 190, 201, 0.3);
 }
 
 .nerds-container {                /*Блок на карте*/
@@ -339,7 +379,7 @@ iframe {
   top: 54px;
   left: 50%;
   transform: translateX(-580px);
-  outline: 5px solid rgba(24, 190, 201, 0.3);
+  outline: 1px solid rgba(24, 190, 201, 0.3);
 }
 
 .nerds-adress {
@@ -354,14 +394,14 @@ iframe {
   line-height: 30px;
   font-weight: 700;
   text-transform: uppercase;
-  margin-left: 38px;
-  margin-top: 49px;
+  margin-left: 40px;
+  margin-top: 17px;
   margin-right: 76px;
   margin-bottom: 23px;
 }
 
 .nerds-adress-description {
-  margin-left: 50px;
+  margin-left: 40px;
   margin-top: 23px;
   margin-right: 39px;
 }
@@ -373,14 +413,14 @@ iframe {
   display: block;
   width: 219px;
   margin-left: 40px;
-  margin-top: 35px;
+  margin-top: 40px;
   padding: 16px 0;
   text-align: center;
   text-transform: uppercase;
 }
 
 .telephone-number {
-  margin-left: 50px;
+  margin-left: 40px;
   margin-right: 39px;
   font-weight: 400;
 }
@@ -406,7 +446,7 @@ iframe {
   display: grid;
   grid-template-columns: 1fr 2fr;
   width: 1060px;
-  outline: 5px solid yellowgreen;
+  outline: 1px solid yellowgreen;
   margin-left: auto;
   margin-right: auto;
 
@@ -476,7 +516,7 @@ iframe {
   text-align: center;
   padding-top: 72px;
   padding-bottom: 108px;
-  outline: 5px solid yellowgreen;
+  outline: 1px solid yellowgreen;
 }
 
 .filter-description {         /*СТОИМОСТЬ, СЕТКА, ОСОБЕННОСТИ*/
@@ -514,12 +554,12 @@ iframe {
 .filter {
   display: block;
   margin-right: 141px;
-  outline: 5px solid yellowgreen;
+  outline: 1px solid yellowgreen;
 }
 
 .catalog-partners {
   display: block;
-  outline: 5px solid red;
+  outline: 1px solid red;
 }
 
 /*========================Блок стомости с ползунком========================*/
@@ -746,14 +786,14 @@ ul.sorting {
 /*=====================СПИСОК ПАРТНЁРОВ=======================*/
 .sites {
   display: block;
-  outline: 5px solid green;
+  outline: 1px solid green;
 }
 
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  padding: 5px;
+  padding: 1px;
 }
 
 /*==============================================================*/
