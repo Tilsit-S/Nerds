@@ -26,8 +26,6 @@
   background-color: var(--basic-white);
 }
 
-.test {}
-
 .page-body {
   min-height: 100%;
   font-family: 'Roboto', Arial, sans-serif;
