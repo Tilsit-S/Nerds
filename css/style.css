@@ -28,6 +28,7 @@
 
 .page-body {
   min-height: 100%;
+  margin-top: 0;
   font-family: 'Roboto', Arial, sans-serif;
   color: var(--basic-font-color);
   outline: 1px solid black;
@@ -39,6 +40,8 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  width: 1160px;
+  margin: 0 auto;
   background-color: var(--header-color);
 }
 
@@ -52,9 +55,9 @@
 .main-navigation {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
+  height: 114px;
   width: 1160px;
-  padding-top: 40px;
   outline: 1px solid rgba(255, 0, 0, 0.3);
 }
 
@@ -119,6 +122,9 @@
 .main-description {                               /*Блок слева*/
   display: grid;
   grid-template-columns: 1fr 2fr;
+  max-width: 1160px;
+  justify-content: center;
+  margin: auto;
   outline: 1px solid rgba(12, 20, 240, 0.3);
   background-color: var(--header-color);
 }
@@ -141,7 +147,7 @@
 }
 
 
-.description-button {                                       /*кнопка УЗНАТЬ БОЛЬШЕ*/
+.main-description-button {                                       /*кнопка УЗНАТЬ БОЛЬШЕ*/
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
@@ -209,7 +215,13 @@
 }
 
 .main-sections {                                 /*Веб-сайты, Приложения, Презентации*/
+  display: flex;
+  justify-content: center;
+  max-width: 1160px;
+  justify-content: center;
+  margin: auto;
   margin-top: 80px;
+  background-color: var(--basic-white);
 }
 
 .servers {
@@ -219,11 +231,10 @@
 
 .web-sites {                                     /*Веб-сайты, Приложения, Презентации*/
   display: grid;
-  width: 299px;
+  width: 300px;
   margin-bottom: 80px;
   font-size: 24px;
   line-height: 30px;
-  margin-right: 100px;
   outline: 1px solid rgba(12, 20, 240, 0.3);
 }
 
@@ -248,15 +259,13 @@
 }
 
 .left-side-description {
-  padding-top: 20px;
+
   outline: 1px solid rgba(12, 20, 240, 0.3);
 }
 
 .main-container {
-  width: 1160px;
   margin-left: auto;
   margin-right: auto;
-  outline: 1px solid rgba(245, 10, 237, 0.3);
 }
 
 .main-sections {
@@ -269,6 +278,8 @@
   display: grid;
   grid-template-columns: 2fr 1fr;
   padding-top: 40px;
+  max-width: 1160px;
+  margin: auto;
   outline: 1px solid rgba(245, 10, 237, 0.3);
 }
 
@@ -358,8 +369,9 @@
 .main-links {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  margin-top: 48px;
-  margin-left: 33px;
+  height: 184px;
+  max-width: 1160px;
+  margin: auto;
   outline: 1px solid rgba(24, 190, 201, 0.3);
 }
 
@@ -367,7 +379,7 @@
 
 .map-navigation {
   width: 100%;
-  margin-top: 120px;
+  margin-top: 80px;
   position: relative;
   outline: 1px solid rgba(24, 190, 201, 0.3);
 }
@@ -437,13 +449,12 @@
 
 .main-footer-index {
   display: block;
-  padding-top: 68px;
-  padding-bottom: 68px;
 }
 
 .footer-container {
   display: grid;
   grid-template-columns: 1fr 2fr;
+  padding-top: 68px;
   width: 1060px;
   outline: 1px solid yellowgreen;
   margin-left: auto;
@@ -511,9 +522,10 @@
   font-size: 55px;
   line-height: 55px;
   font-weight: 500;
+  margin-top: 0;
   background-color: var(--header-color);
   text-align: center;
-  padding-top: 72px;
+  padding-top: 78px;
   padding-bottom: 108px;
   outline: 1px solid yellowgreen;
 }
@@ -540,7 +552,6 @@
 .catalog-container {
   display: block;
   margin: 0 auto;
-  padding-top: 55px;
 }
 
 .container-wrapper {
