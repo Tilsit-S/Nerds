@@ -76,6 +76,7 @@
   text-decoration: none;
   padding-left: 23px;
   padding-right: 22px;
+  margin-bottom: 10px;
   color: var(--basic-black);
   text-transform: uppercase;
   font-weight: 500;
@@ -97,7 +98,7 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 30px;
-  padding-top: 20px;
+  padding-bottom: 10px;
 }
 
 .basket-picture {
@@ -129,6 +130,7 @@
   width: 1160px;
   justify-content: center;
   margin: auto;
+  margin-bottom: 80px;
   outline: 1px solid rgba(12, 20, 240, 0.3);
   background-color: var(--header-color);
 }
@@ -138,8 +140,8 @@
   flex-wrap: wrap;
   font-size: 55px;
   line-height: 55px;
-  margin-bottom: 0;
-  padding-top: 5px;
+  margin-top: 77px;
+  margin-bottom: 28px;
   font-weight: 500;
 }
 
@@ -147,18 +149,20 @@
   font-size: 16px;
   line-height: 24px;
   font-weight: 500;
-  margin-top: 25px;
+  margin-top: 0;
+  margin-bottom: 39px;
 }
 
 
 .main-description-button {                                       /*кнопка УЗНАТЬ БОЛЬШЕ*/
+  font-weight: 500;
   font-size: 16px;
   line-height: 18px;
-  font-weight: 500;
-  margin-left: 0;
-  margin-top: 35px;
-  padding-top: 18px;
+  display: block;
+  width: 240px;
+  padding-top: 17px;
   padding-bottom: 15px;
+  text-align: center;
   text-transform: uppercase;
   color: var(--index-button-text);
   text-decoration: none;
@@ -224,7 +228,6 @@
   max-width: 1160px;
   justify-content: center;
   margin: auto;
-  margin-top: 80px;
   background-color: var(--basic-white);
 }
 
@@ -235,6 +238,8 @@
 
 .web-sites {                                     /*Веб-сайты, Приложения, Презентации*/
   display: grid;
+  justify-content: left;
+  margin-right: 100px;
   width: 300px;
   margin-bottom: 80px;
   font-size: 24px;
@@ -263,7 +268,8 @@
 }
 
 .left-side-description {
-
+  display: flex;
+  flex-flow: column;
   outline: 1px solid rgba(12, 20, 240, 0.3);
 }
 
@@ -273,8 +279,7 @@
 }
 
 .main-sections {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: block;
   outline: 1px solid rgba(245, 10, 237, 0.3);
 }
 
@@ -300,6 +305,10 @@
   text-transform: uppercase;
   margin-top: 32px;
   padding-left: 18px;
+}
+
+.main-statistic-table {
+  width: 100%;
 }
 
 .persent {                          /*Проценты*/
@@ -345,7 +354,6 @@
 .orders {
   font-size: 16px;
   line-height: 24px;
-  font-weight: 400;
   text-transform: uppercase;
   font-weight: 700;
   margin-top: 40px;
@@ -354,7 +362,6 @@
 
 
 .main-statistic {
-  display: grid;
   outline: 1px solid rgba(245, 10, 237, 0.3);
 }
 
@@ -383,7 +390,7 @@
 
 .map-navigation {
   width: 100%;
-  margin-top: 80px;
+  margin-top: 87px;
   position: relative;
   outline: 1px solid rgba(24, 190, 201, 0.3);
 }
@@ -400,7 +407,7 @@
 .nerds-adress {
   display: block;
   width: 300px;
-  padding: 32px 10px 46px;
+  padding: 34px 10px 46px;
   background-color: var(--basic-white);
 }
 
@@ -409,9 +416,8 @@
   line-height: 30px;
   font-weight: 700;
   text-transform: uppercase;
-  margin-left: 40px;
   margin-top: 17px;
-  margin-right: 76px;
+  margin-left: 40px;
   margin-bottom: 23px;
 }
 
@@ -426,12 +432,18 @@
   font-size: 16px;
   line-height: 18px;
   display: block;
-  width: 219px;
   margin-left: 40px;
-  margin-top: 40px;
-  padding: 16px 0;
+  margin-top: 37px;
+  width: 219px;
+  padding-top: 17px;
+  padding-bottom: 15px;
   text-align: center;
   text-transform: uppercase;
+  color: var(--index-button-text);
+  text-decoration: none;
+  background-color: var(--red-button);
+  border-radius: 3px;
+  border: none;
 }
 
 .telephone-number {
@@ -458,11 +470,10 @@
 .footer-container {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  padding-top: 68px;
+  padding-top: 60px;
   width: 1060px;
   outline: 1px solid yellowgreen;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 470px;
 
 }
 
@@ -471,7 +482,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-
+  width: 260px;
 }
 
 .social-links {
@@ -488,7 +499,8 @@
 .friendsship {                     /*БЛОК Давайте дружить, это выгодно*/
   display: flex;
   flex-wrap: wrap;
-
+  padding-top: 2px;
+  padding-left: 47px;
 }
 
 .friendsship-title {               /*Давайте дружить, это выгодно*/
@@ -596,14 +608,7 @@
   margin-top: 49px;
 }
 
-legend {
-  font-size: 18px;
-  line-height: 30px;
-  text-transform: uppercase;
-  font-weight: 700;
-}
-
-.filter-item {
+.filter-item legend {
   font-size: 18px;
   line-height: 24px;
   text-transform: uppercase;
@@ -735,7 +740,7 @@ legend {
 
 .button-next {                /*Кнопка Следующая*/
   display: block;
-  width: 260px;
+  width: 160px;
   padding: 12px 75px;
   font-weight: 500;
   text-align: center;
@@ -821,3 +826,11 @@ ul.sorting {
 }
 
 /*==============================================================*/
+
+.html-academy-link,
+.borodinsky-link,
+.pink-link,
+.mishka-link {
+  margin-top: 65px;
+  margin-left: 30px;
+}
