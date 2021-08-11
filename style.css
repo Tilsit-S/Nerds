@@ -130,7 +130,8 @@
   flex-wrap: wrap;
   font-size: 55px;
   line-height: 55px;
-  margin-bottom: 0;
+  margin-top: 78px;
+  margin-bottom: 28px;
   padding-top: 5px;
   font-weight: 500;
 }
@@ -160,7 +161,7 @@
   border: none;
 }
 
-.order-button {                                           /*кнопки ЗАКАЗАТЬ*/
+.order-button {                                             /*кнопки ЗАКАЗАТЬ*/
   display: block;
   width: 160px;
   padding: 15px 0;
@@ -333,7 +334,6 @@
 .orders {
   font-size: 16px;
   line-height: 24px;
-  font-weight: 400;
   text-transform: uppercase;
   font-weight: 700;
   margin-top: 40px;
