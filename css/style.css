@@ -67,8 +67,12 @@
   line-height: 30px;
   list-style: none;
   padding-right: 85px;
-  margin-bottom: 0px;
+  margin: 0;
   color: var(--basic-black);
+}
+
+.site-navigation-container {
+  margin-bottom: 9px;
 }
 
 .site-navigation-link {                               /*Ссылки*/
@@ -76,7 +80,7 @@
   text-decoration: none;
   padding-left: 23px;
   padding-right: 22px;
-  margin-bottom: 10px;
+  margin: 0;
   color: var(--basic-black);
   text-transform: uppercase;
   font-weight: 500;
@@ -130,7 +134,7 @@
   width: 1160px;
   justify-content: center;
   margin: auto;
-  margin-bottom: 80px;
+  margin-bottom: 77px;
   outline: 1px solid rgba(12, 20, 240, 0.3);
   background-color: var(--header-color);
 }
@@ -140,8 +144,8 @@
   flex-wrap: wrap;
   font-size: 55px;
   line-height: 55px;
-  margin-top: 77px;
-  margin-bottom: 28px;
+  margin-top: 79px;
+  margin-bottom: 25px;
   font-weight: 500;
 }
 
@@ -226,7 +230,6 @@
   display: flex;
   justify-content: center;
   max-width: 1160px;
-  justify-content: center;
   margin: auto;
   background-color: var(--basic-white);
 }
@@ -263,7 +266,7 @@
   line-height: 30px;
   text-transform: uppercase;
   font-weight: 700;
-  margin-top: 23px;
+  margin-top: 24px;
   margin-bottom: 0;
 }
 
@@ -288,12 +291,13 @@
   grid-template-columns: 2fr 1fr;
   padding-top: 40px;
   max-width: 1160px;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
   outline: 1px solid rgba(245, 10, 237, 0.3);
 }
 
 .statistics {
-  padding-left: 30px;
+  padding-left: 24px;
   padding-top: 3px;
   outline: 1px solid rgba(245, 10, 237, 0.3);
 }
@@ -304,7 +308,7 @@
   font-weight: 700;
   text-transform: uppercase;
   margin-top: 32px;
-  padding-left: 18px;
+  padding-left: 20px;
 }
 
 .main-statistic-table {
@@ -315,6 +319,11 @@
   font-size: 45px;
   line-height: 64px;
   font-weight: 700;
+}
+
+.persent p {
+  margin: 0;
+  margin-top: 11px;
 }
 
 .sup-persent {                      /*символ %*/
@@ -345,11 +354,24 @@
 
 .orders-list {
   line-height: 3;
+  list-style: none;
+}
+
+.orders-list::before {
+  content: "";
+  width: 25px;
+  height: 2px;
+  background-color: #fb565a;
+  position: absolute;
+  left: -34px;
+  top: 12px;
 }
 
 .description-list {
   margin-top: 0px;
 }
+
+
 
 .orders {
   font-size: 16px;
@@ -383,6 +405,7 @@
   height: 184px;
   max-width: 1160px;
   margin: auto;
+  margin-top: 45px;
   outline: 1px solid rgba(24, 190, 201, 0.3);
 }
 
@@ -390,9 +413,13 @@
 
 .map-navigation {
   width: 100%;
-  margin-top: 87px;
+  margin-top: 79px;
   position: relative;
   outline: 1px solid rgba(24, 190, 201, 0.3);
+}
+
+.nerds-logo {
+  margin-left: 3px;
 }
 
 .nerds-container {                /*Блок на карте*/
@@ -433,7 +460,7 @@
   line-height: 18px;
   display: block;
   margin-left: 40px;
-  margin-top: 37px;
+  margin-top: 38px;
   width: 219px;
   padding-top: 17px;
   padding-bottom: 15px;
@@ -448,7 +475,6 @@
 
 .telephone-number {
   margin-left: 40px;
-  margin-right: 39px;
   font-weight: 400;
 }
 
@@ -473,7 +499,7 @@
   padding-top: 60px;
   width: 1060px;
   outline: 1px solid yellowgreen;
-  margin-left: 470px;
+  margin-left: 363px;
 
 }
 
@@ -500,14 +526,14 @@
   display: flex;
   flex-wrap: wrap;
   padding-top: 2px;
-  padding-left: 47px;
+  padding-left: 48px;
 }
 
 .friendsship-title {               /*Давайте дружить, это выгодно*/
   font-weight: 700;
   font-size: 36px;
   line-height: 36px;
-  margin-top: 4px;
+  margin-top: 11px;
   margin-bottom: 10px;
 }
 
