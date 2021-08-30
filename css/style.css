@@ -358,17 +358,18 @@
 }
 
 .orders-list::before {
-  content: "";
+  content: '';
   width: 25px;
   height: 2px;
   background-color: #fb565a;
-  position: absolute;
-  left: -34px;
-  top: 12px;
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: 5px;
 }
 
 .description-list {
-  margin-top: 0px;
+  margin-top: 0;
+  padding-left: 0;
 }
 
 
@@ -567,7 +568,7 @@
   line-height: 55px;
   font-weight: 500;
   margin-top: 0;
-  margin-bottom: 55px;
+  margin-bottom: 37px;
   background-color: var(--header-color);
   text-align: center;
   padding-top: 78px;
@@ -627,6 +628,11 @@
   margin: 0;
   padding: 0;
   border: none;
+}
+
+.sent {
+  padding-left: 0;
+  padding-top: 21px;
 }
 
 .range-filter {
