@@ -57,20 +57,40 @@
           </form>
             <fieldset class="grid">
               <h2 class="filter-description">Сетка:</h2>
-              <ul class="radio-button">
-                <li><input type="radio">Адаптивная</li>
-                <li><input type="radio">Фиксированная</li>
-                <li><input type="radio">Резиновая</li>
+              <ul class=" list grid-list">
+                <li class="characteristic_item"><input type="radio" checked>Адаптивная</li>
+                <li class="characteristic_item"><input type="radio">Фиксированная</li>
+                <li class="characteristic_item"><input type="radio">Резиновая</li>
               </ul>
             </fieldset>
             <fieldset class="characteristic">
               <h2 class="filter-description">Особенности:</h2>
-              <ul class="radio-button">
-                <li><input type="radio">Слайдер</li>
-                <li><input type="radio">Блок преимуществ</li>
-                <li><input type="radio">Новости</li>
-                <li><input type="radio">Галерея</li>
-                <li><input type="radio">Корзина</li>
+              <ul class="list characteristic_list">
+                <li class="characteristic_item"><input class="characteristic_button radio-button" type="radio" name="option" id="slider" checked>
+                  <label for="slider">
+                    Слайдер
+                  </label>
+                </li>
+                <li class="characteristic_item"><input class="characteristic_button radio-button" type="radio" name="option" id="advantages">
+                  <label for="advantages">
+                    Блок преимуществ
+                  </label>
+                </li>
+                <li class="characteristic_item"><input class="characteristic_button radio-button" type="radio" name="option" id="news" checked>
+                  <label for="news">
+                    Новости
+                  </label>
+                </li>
+                <li class="characteristic_item"><input class="characteristic_button radio-button" type="radio" name="option" id="gallery">
+                  <label for="gallery">
+                    Галерея
+                  </label>
+                </li>
+                <li class="characteristic_item"><input class="characteristic_button radio-button" type="radio" name="option" id="basket">
+                  <label for="basket">
+                    Корзина
+                  </label>
+                </li>
               </ul>
             </fieldset>
             <button class="result">Показать</button>
@@ -97,16 +117,11 @@
           <section class="sites">
             <ul class="portfolio-list">
               <li class="partners">
-                <div class="partner">
-                  <p class="name">
+                <a href="#" class="partners">
+                  <p class="sedona-name">
                     <img src="img/img-sedona-1.jpg" width="359" height="578" alt="Седона изображение">
                   </p>
-                  <div class="popap">
-                    <h3>SEDONA</h3>
-                    <p class="text">Информационный сайт для туристов</p>
-                    <span class="price">9 900 руб.</span>
-                  </div>
-                </div>
+                </a>
               </li>
               <li class="partners">
                 <a href="#" class="partners">
@@ -115,7 +130,7 @@
                   </p>
                 </a>
               </li>
-              <li>
+              <li class="partners">
                 <a href="#" class="partners">
                   <p class="barbershop-name">
                     <img src="img/img-barbershop-1.jpg" width="359" height="578" alt="Барбершоп изображение">
@@ -138,9 +153,9 @@
               </li>
               <li class="partners">
                 <div class="partners">
-                  <h2 class="kvast-name">
+                  <p class="kvast-name">
                     <img src="img/img-kvast-1.jpg" width="359" height="578" alt="Кваст изображение">
-                  </h2>
+                  </p>
                 </div>
               </li>
             </ul>

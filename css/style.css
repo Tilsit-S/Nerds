@@ -336,6 +336,7 @@
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
+  padding-top: 10px;
 }
 
 .web-studio {                       /*Мы маленькая, но гордая...*/
@@ -350,6 +351,7 @@
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
+  padding-top: 1px;
 }
 
 .orders-list {
@@ -401,13 +403,15 @@
 }
 
 .main-links {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  height: 184px;
+  display: flex;
+  justify-content: center;
   max-width: 1160px;
   margin: auto;
-  margin-top: 45px;
-  outline: 1px solid rgba(24, 190, 201, 0.3);
+  margin-top: 43px;
+  margin-bottom: 80px;
+  padding-bottom: 6px;
+  border-top: 2px solid #EEEEEE;
+  border-bottom: 2px solid #EEEEEE;
 }
 
 /*=======================MAP-NAVIGATION==============================*/
@@ -497,11 +501,29 @@
 .footer-container {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  padding-top: 60px;
+  padding-top: 67px;
   width: 1060px;
+  margin: auto;
   outline: 1px solid yellowgreen;
-  margin-left: 363px;
+}
 
+.map-container {
+  display: flex;
+  justify-content: center;
+  width: 1440px;
+  margin: auto;
+}
+
+.map-marker {
+  display: block;
+  position: absolute;
+  top: 84px;
+  left: 45%;
+  transform: translateX(180px);
+}
+
+.map-navigation {
+  margin: 0;
 }
 
 .footer-links {
@@ -510,6 +532,7 @@
   justify-content: space-between;
   align-items: center;
   width: 260px;
+  margin-left: 175px;
 }
 
 .social-links {
@@ -555,7 +578,7 @@
 .partner {
   position: absolute;
   overflow: hidden;
-
+  padding: 0;
 }
 
 .partner:hover .popap {
@@ -583,13 +606,12 @@
   text-transform: uppercase;
 }
 
-.radio-button {
+.characteristic_list {
   font-size: 16px;
   line-height: 19px;
   font-weight: 400;
   list-style-type: none;
 }
-
 /*==================================================================*/
 
 
@@ -627,6 +649,7 @@
 .filter-item {
   margin: 0;
   padding: 0;
+  margin-bottom: 39px;
   border: none;
 }
 
@@ -750,6 +773,7 @@
 }
 
 .pagination {
+  list-style: none;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -760,6 +784,16 @@
   line-height: 18px;
   font-weight: 500;
   text-transform: uppercase;
+  text-align: center;
+  padding-top: 13px;
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-color: var(--header-color);
+  border: 3px solid #DBDBDB;
+  box-sizing: border-box;
+  border-radius: 3px;
+
 }
 
 .pagination:not:first-child {
@@ -772,18 +806,38 @@
 
 .button-next {                /*Кнопка Следующая*/
   display: block;
-  width: 160px;
-  padding: 12px 75px;
-  font-weight: 500;
+  width: 260px;
+  padding: 15px 0;
   text-align: center;
   text-transform: uppercase;
   font-size: 16px;
   line-height: 18px;
+  font-weight: 500;
   color: var(--basic-black);
   background-color: var(--header-color);
   border: none;
   border-radius: 3px;
 }
+
+/*=========================================Блок сортировки========================================*/
+
+.list {
+  padding: 0;
+  list-style: none;
+}
+
+.grid,
+.characteristic {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+.characteristic_item {
+  font-size: 16px;
+  line-height: 24px;
+}
+
 
 .result {                     /*Кнопка ПОКАЗАТЬ*/
   display: block;
@@ -817,7 +871,6 @@
   text-decoration: none;
   background-color: var(--red-button);
 }
-/*==========================================================================*/
 
 /*========================Сортировать=============================*/
 
@@ -857,12 +910,31 @@ ul.sorting {
   padding: 1px;
 }
 
-/*==============================================================*/
+.partners {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0;
+}
 
-.html-academy-link,
-.borodinsky-link,
-.pink-link,
+.html-academy-link {
+  margin-top: 49px;
+  margin-left: 32px;
+}
+
+.borodinsky-link {
+  margin-top: 32px;
+  margin-left: 28px;
+}
+
+.pink-link {
+
+}
+
 .mishka-link {
-  margin-top: 65px;
-  margin-left: 30px;
+
+}
+
+.main-wrapper {
+  min-width: 100%;
 }
