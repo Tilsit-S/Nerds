@@ -31,7 +31,6 @@
   margin-top: 0;
   font-family: 'Roboto', 'Arial', sans-serif;
   color: var(--basic-font-color);
-  outline: 1px solid black;
 }
 
 /*INDEX*/
@@ -57,7 +56,6 @@
   align-items: flex-end;
   height: 114px;
   width: 1160px;
-  outline: 1px solid rgba(255, 0, 0, 0.3);
 }
 
 .site-navigation {                                /*Студия, клиенты, магазин, контакты*/
@@ -97,7 +95,6 @@
 .basket-link {                                         /*Корзина*/
   color: var(--basic-black);
   text-decoration: none;
-  outline: 1px solid rgba(0,255,0, 0.3);
   text-transform: uppercase;
   font-weight: 500;
   font-size: 16px;
@@ -118,7 +115,6 @@
   margin-bottom: 0px;
   width: 160px;
   height: 65px;
-  outline: 1px solid rgba(0,255,0, 0.3);
 }
 
 /*MAIN*/
@@ -135,7 +131,6 @@
   justify-content: center;
   margin: auto;
   margin-bottom: 77px;
-  outline: 1px solid rgba(12, 20, 240, 0.3);
   background-color: var(--header-color);
 }
 
@@ -223,7 +218,6 @@
 
 .sliders {                                       /*Изображение справа*/
   margin-left: 10px;
-  outline: 1px solid rgba(12, 20, 240, 0.3);
 }
 
 .main-sections {                                 /*Веб-сайты, Приложения, Презентации*/
@@ -247,7 +241,6 @@
   margin-bottom: 80px;
   font-size: 24px;
   line-height: 30px;
-  outline: 1px solid rgba(12, 20, 240, 0.3);
 }
 
 .web-sites-description,                           /*Пояснения к блокам*/
@@ -273,7 +266,6 @@
 .left-side-description {
   display: flex;
   flex-flow: column;
-  outline: 1px solid rgba(12, 20, 240, 0.3);
 }
 
 .main-container {
@@ -283,7 +275,6 @@
 
 .main-sections {
   display: block;
-  outline: 1px solid rgba(245, 10, 237, 0.3);
 }
 
 .main-specification {
@@ -293,13 +284,11 @@
   max-width: 1160px;
   margin-left: auto;
   margin-right: auto;
-  outline: 1px solid rgba(245, 10, 237, 0.3);
 }
 
 .statistics {
   padding-left: 24px;
   padding-top: 3px;
-  outline: 1px solid rgba(245, 10, 237, 0.3);
 }
 
 .list-title {                       /*С 2004 года любим точность во всём*/
@@ -387,19 +376,16 @@
 
 
 .main-statistic {
-  outline: 1px solid rgba(245, 10, 237, 0.3);
 }
 
 .main-statistic-persent {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  outline: 1px solid rgba(245, 10, 237, 0.3);
 }
 
 .statistic-description {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  outline: 1px solid rgba(245, 10, 237, 0.3);
 }
 
 .main-links {
@@ -420,7 +406,6 @@
   width: 100%;
   margin-top: 79px;
   position: relative;
-  outline: 1px solid rgba(24, 190, 201, 0.3);
 }
 
 .nerds-logo {
@@ -433,7 +418,6 @@
   top: 54px;
   left: 50%;
   transform: translateX(-580px);
-  outline: 1px solid rgba(24, 190, 201, 0.3);
 }
 
 .nerds-adress {
@@ -504,7 +488,6 @@
   padding-top: 67px;
   width: 1060px;
   margin: auto;
-  outline: 1px solid yellowgreen;
 }
 
 .map-container {
@@ -532,7 +515,6 @@
   justify-content: space-between;
   align-items: center;
   width: 260px;
-  margin-left: 175px;
 }
 
 .social-links {
@@ -596,7 +578,6 @@
   text-align: center;
   padding-top: 78px;
   padding-bottom: 108px;
-  outline: 1px solid yellowgreen;
 }
 
 .filter-description {         /*СТОИМОСТЬ, СЕТКА, ОСОБЕННОСТИ*/
@@ -632,12 +613,10 @@
 .filter {
   display: block;
   margin-right: 141px;
-  outline: 1px solid yellowgreen;
 }
 
 .catalog-partners {
   display: block;
-  outline: 1px solid red;
 }
 
 /*========================Блок стомости с ползунком========================*/
@@ -900,7 +879,6 @@ ul.sorting {
 /*=====================СПИСОК ПАРТНЁРОВ=======================*/
 .sites {
   display: block;
-  outline: 1px solid green;
 }
 
 .portfolio-list {
